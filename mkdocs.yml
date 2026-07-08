@@ -1,0 +1,62 @@
+site_name: Retro Creator
+site_description: Live overlay studio for retro-gaming streams, powered by real gameplay data.
+site_url: https://nelfe80.github.io/RetroCreator-Wiki/
+repo_url: https://github.com/Nelfe80/RetroCreator-Wiki
+repo_name: Nelfe80/RetroCreator-Wiki
+docs_dir: wiki
+edit_uri: ""
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Retro Creator
+          nav_translations:
+            Home: Accueil
+            Support & issues: Support et issues
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Support & issues: support.md

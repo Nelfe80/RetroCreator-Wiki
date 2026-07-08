@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement or a new capability for Retro Creator.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can write in English or French. / Vous pouvez écrire en anglais ou en français.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What streaming problem should this solve?
+      description: Describe the situation during a stream where you miss this capability.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you use today
+      description: Other tools or manual steps you currently use instead.

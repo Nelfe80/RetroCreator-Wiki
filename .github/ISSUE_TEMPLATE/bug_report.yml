@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in Retro Creator does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. / Merci de prendre le temps de signaler un bug.
+        You can write in English or French. / Vous pouvez écrire en anglais ou en français.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+      placeholder: Steps, expected behavior, actual behavior…
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Retro Creator version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: e.g. Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: streaming-software
+    attributes:
+      label: Streaming software and version
+      placeholder: e.g. OBS Studio 31.x / Streamlabs Desktop / Meld Studio
+  - type: input
+    id: apiexpose
+    attributes:
+      label: APIExpose version (if connected)
+      placeholder: e.g. 1.1.2
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / support bundle / screenshots
+      description: Attach a support bundle, relevant logs or screenshots if available.

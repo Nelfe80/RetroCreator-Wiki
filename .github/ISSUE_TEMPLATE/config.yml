@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: APIExpose (data layer) issues
+    url: https://github.com/Nelfe80/RetroBat-APIExpose/issues
+    about: Problems with APIExpose itself (media, gamelists, events, API).
+  - name: APIExpose SDK (developer library) issues
+    url: https://github.com/Nelfe80/APIExpose-SDK/issues
+    about: Problems with the open Data/Event SDK.
