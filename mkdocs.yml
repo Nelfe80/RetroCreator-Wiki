@@ -48,6 +48,7 @@ plugins:
           site_name: Retro Creator
           nav_translations:
             Home: Accueil
+            Progress: Avancement
             Support & issues: Support et issues
 
 markdown_extensions:
@@ -59,4 +60,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Progress: progress.md
   - Support & issues: support.md
