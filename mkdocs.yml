@@ -48,6 +48,10 @@ plugins:
           site_name: Retro Creator
           nav_translations:
             Home: Accueil
+            Getting started: Bien démarrer
+            Designer: Designer
+            Flows & Event: Flows & Event
+            Twitch: Twitch
             Progress: Avancement
             Support & issues: Support et issues
 
@@ -60,5 +64,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Getting started: getting-started.md
+  - Designer: designer.md
+  - Flows & Event: flows-events.md
+  - Twitch: twitch.md
   - Progress: progress.md
   - Support & issues: support.md

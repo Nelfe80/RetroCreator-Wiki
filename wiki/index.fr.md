@@ -9,6 +9,8 @@ en automatisations live, sans écrire une ligne de code.
 Il s'appuie sur [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
 et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert.
 
+![Designer](assets/designer.png)
+
 ## Ce qu'il fait
 
 - **Designer visuel** — composez vos overlays avec des widgets prêts à l'emploi
@@ -23,6 +25,14 @@ et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert.
 - **Local d'abord** — pas de compte, pas de cloud obligatoire. Vos données restent sur
   votre machine.
 - Interface **français & anglais**, d'autres langues à venir.
+
+
+## Documentation
+
+- **[Bien démarrer](getting-started.md)** — de zéro à l'overlay en direct.
+- **[Guide du Designer](designer.md)** — vues, popups, composants, calques, styles.
+- **[Flows & Event](flows-events.md)** — automatisations et tableau de bord live.
+- **[Intégration Twitch](twitch.md)** — branchez votre chat (aucune clé) et lancez des concours.
 
 ## Statut
 

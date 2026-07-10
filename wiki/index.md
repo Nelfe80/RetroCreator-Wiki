@@ -9,6 +9,8 @@ live automations, without writing a single line of code.
 It is built on top of [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
 and its open [Data/Event SDK](https://github.com/Nelfe80/APIExpose-SDK).
 
+![Designer](assets/designer.png)
+
 ## What it does
 
 - **Visual designer** — compose overlays with ready-made widgets (score, timer, now
@@ -21,6 +23,14 @@ and its open [Data/Event SDK](https://github.com/Nelfe80/APIExpose-SDK).
   and more.
 - **Local first** — no account, no cloud required. Your data stays on your machine.
 - **English & French** interface, more languages to come.
+
+
+## Documentation
+
+- **[Getting started](getting-started.md)** — from zero to a live overlay.
+- **[Designer guide](designer.md)** — views, popups, components, layers, styles.
+- **[Flows & Event](flows-events.md)** — automations and the live dashboard.
+- **[Twitch integration](twitch.md)** — plug your chat (no key needed) and run contests.
 
 ## Status
 
