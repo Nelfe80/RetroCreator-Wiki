@@ -32,7 +32,7 @@ brut des événements (6 lignes) — pratique pour vérifier ce que les jeux
 
 ## 2. Composer une vue dans le Designer
 
-![Designer](assets/designer.png)
+![Designer](assets/designer-browsing.png)
 
 1. Ouvrez **Mode → Designer**.
 2. Piochez des éléments dans la palette de gauche — groupés par usage

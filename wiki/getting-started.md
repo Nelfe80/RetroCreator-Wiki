@@ -31,7 +31,7 @@ log (6 lines) — handy to check what the games actually emit.
 
 ## 2. Build a view in the Designer
 
-![Designer](assets/designer.png)
+![Designer](assets/designer-browsing.png)
 
 1. Open **Mode → Designer**.
 2. Pick elements from the left palette — they are grouped by usage

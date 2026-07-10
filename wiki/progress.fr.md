@@ -19,7 +19,6 @@ L'overlay est servi localement en source navigateur transparente et se met à
 jour à l'instant où le jeu change — ici avec un vrai score lu dans une partie
 en cours.
 
-![Overlay live](assets/overlay-live.png)
 
 ## Designer visuel
 

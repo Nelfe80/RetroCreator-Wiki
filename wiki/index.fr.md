@@ -9,7 +9,7 @@ en automatisations live, sans écrire une ligne de code.
 Il s'appuie sur [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
 et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert.
 
-![Designer](assets/designer.png)
+![Vue Live](assets/pulse.png)
 
 ## Ce qu'il fait
 

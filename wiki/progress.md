@@ -17,7 +17,6 @@ your language.
 The overlay is served locally as a transparent browser source and updates the
 instant the game does — here with a real score read from a running game.
 
-![Live overlay](assets/overlay-live.png)
 
 ## Visual designer
 

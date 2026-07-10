@@ -9,7 +9,7 @@ live automations, without writing a single line of code.
 It is built on top of [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
 and its open [Data/Event SDK](https://github.com/Nelfe80/APIExpose-SDK).
 
-![Designer](assets/designer.png)
+![Live view](assets/pulse.png)
 
 ## What it does
 
