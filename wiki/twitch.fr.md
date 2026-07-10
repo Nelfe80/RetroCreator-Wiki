@@ -57,3 +57,46 @@ pilote depuis **Event** :
     demande une autorisation Twitch (OAuth). C'est sur la feuille de route ;
     aujourd'hui toutes les annonces se font à l'écran — là où les viewers
     regardent, de toute façon.
+
+## 4. Live Contest : vos viewers jouent chez eux
+
+Le **Live Contest** va plus loin que le chat : vos viewers lancent le **même
+jeu chez eux** (RetroBat + APIExpose) et leurs vraies données de jeu remontent
+en direct — premier à 10 anneaux, meilleur score, contre-la-montre…
+
+### Une fois pour toutes : le jeton streamer
+
+1. **Fichier → Paramètres → NelfeTech** → *Obtenir mon jeton (connexion
+   Twitch)* : connectez-vous avec votre compte Twitch.
+2. Cliquez **📥 Envoyer vers Retro Creator** : le jeton s'enregistre tout
+   seul dans l'application (un ✅ le confirme des deux côtés).
+   Un bouton 🗑 dans Paramètres permet de le supprimer.
+
+### Créer et lancer un contest
+
+Dans **Mode → Event → Live Contest**, avec un jeu sélectionné dans RetroBat :
+
+1. **Titre**, **!commande** (ce que les viewers taperont), **Mode** (course,
+   meilleur score, contre-la-montre, survie), **Signal du jeu** — la liste
+   est lue directement dans le fichier .MEM du jeu courant — et **Cible**.
+2. **Participation** : tous les viewers, **abonnés uniquement**, ou via une
+   **récompense en points de chaîne** (le viewer doit taper la !commande via
+   l'échange de points ; créez une récompense « avec texte » sur votre
+   tableau de bord Twitch).
+3. **🧪 Manche de test** (recommandé) : quelques viewers s'inscrivent et
+   jouent pour vérifier que les signaux remontent. À l'ouverture réelle,
+   leurs scores de test sont effacés — mais ils restent inscrits.
+4. **▶ Ouvrir les inscriptions** : chaque viewer qui tape la !commande reçoit
+   un lien personnel (affiché dans la carte, à coller dans le chat). Il se
+   connecte avec Twitch, confirme, et ouvre son **client de jeu** — une
+   simple page web qui lit sa partie via son APIExpose local et envoie sa
+   progression toutes les 3 secondes.
+5. **🏁 Lancer**, suivez le classement en direct, **⏹ Clôturer** : le
+   classement est figé, l'export **CSV** disponible, et **↻ Relancer**
+   recrée immédiatement un contest identique.
+
+!!! tip "Côté viewer"
+    Le viewer n'installe rien de plus que RetroBat + APIExpose : le lien
+    d'inscription mène à une page de confirmation, puis au client de jeu
+    dans son navigateur. S'il voit « APIExpose local » en rouge, il doit
+    lancer RetroBat avec le plugin APIExpose puis démarrer le jeu.
