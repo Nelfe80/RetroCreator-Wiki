@@ -55,48 +55,59 @@ For recurring mechanics, condition everything in **Flows** and pilot it from
 
 ## 4. Live Contest: your viewers play at home
 
-The **Live Contest** goes beyond chat: your viewers launch the **same game at
-home** (RetroBat + APIExpose) and their real game data streams back live —
-first to 10 rings, best score, time attack…
+The **Live Contest** goes beyond chat: your viewers launch the **same game
+at home** (RetroBat + APIExpose) and their real game data streams back live —
+first to 10 rings, best score, time attack… Everything is orchestrated
+automatically: game launch, simultaneous start, scores, results.
 
 ### One-time setup: the streamer token
 
 1. **File → Settings → NelfeTech** → *Get my token (Twitch login)*: log in
    with your Twitch account.
-2. Click **📥 Send to Retro Creator**: the token registers itself in the app
-   (a ✅ confirms it on both sides). A 🗑 button in Settings deletes it.
+2. Click **📥 Send to Retro Creator**: the token registers itself (a ✅
+   confirms it on both sides, 🗑 button to delete it).
 
 ### Create and run a contest
 
 In **Mode → Event → Live Contest**, with a game selected in RetroBat:
 
-1. **Title**, **!command** (what viewers will type), **Mode** (race, best
-   score, time attack, survival), **Game signal** — the list is read straight
-   from the current game's .MEM file — and **Target**.
+1. **Title**, **!command**, **Mode** (race, best score, time attack,
+   survival), **Game signal** — read straight from the current game's .MEM
+   file — and **Target**.
 2. **Who can join**: all viewers, **subscribers only**, or through a
-   **channel-point reward** (the viewer must type the !command via the
-   points redemption; create a "with text" reward on your Twitch dashboard).
-3. **🧪 Test round** (recommended): a few viewers enrol and play so you can
-   check the signals flow. When you open for real, their test scores are
-   wiped — but they stay enrolled.
-4. **▶ Open registrations**: every viewer typing the !command gets a personal
-   link — posted automatically in chat by the **NelfeTech bot** when it is
-   active, and shown on the card (copy button) otherwise. They log in with Twitch,
-   confirm, and open their **game client** — a simple web page that reads
-   their game through their local APIExpose and pushes progress every
-   3 seconds.
-5. **🏁 Start**, watch the live leaderboard, **⏹ Close**: the standings are
-   frozen, the **CSV** export becomes available, and **↻ Run again**
-   instantly recreates an identical contest.
+   **channel-point reward**.
+3. **Bot message**: the text the bot posts in chat before the link
+   (e.g. *🎮 Click here to play ➜*), and **Player brief**: your objective
+   sentence, shown big on every player's screen (e.g. *Collect 20 rings as
+   fast as you can!*).
+4. **🧪 Test round** (optional): trial scores are wiped when you open for
+   real, participants stay enrolled.
+5. **▶ Open registrations**: every viewer typing the !command gets a
+   **short personal link** from the bot in chat. They confirm with Twitch —
+   and that's it: **their game launches at home automatically**.
+
+### What the viewer experiences (all automatic)
+
+1. They confirm → their APIExpose takes over: the game launches, an on-top
+   window says **"Press START!"**.
+2. As soon as their run begins it is **paused** — they are *ready*. Your
+   dashboard shows **"ready: x / y"** live and flags whoever is stuck
+   (*⚠ game not found*, *⚠ must press START*…).
+3. **🏁 Start**: a big in-game **5-4-3-2-1 countdown**, then GO — every
+   pause lifts **at the same millisecond**.
+4. In race mode, the first player to reach the target sees their game pause:
+   their **time** is recorded, "🏁 Target reached!", and RetroArch closes by
+   itself — no need to wait for you to close the contest.
+5. **⏹ Close**: standings frozen (race shows **times**), **CSV** export, a
+   stable **JSON results feed** for your overlays, **↻ Run again**.
+
+!!! tip "Viewer side: a single thing to do"
+    Install RetroBat + the APIExpose plugin and enable
+    **GAME EVENTS MANAGER → ENABLE LIVE CONTEST** in the RetroBat menus.
+    The step-by-step guide to share: the platform's *Guide* page (linked
+    from every enrolment page).
 
 !!! tip "Recommended: make the bot a moderator"
     Type `/mod RetroCreatorBot` once in your chat: many channels block
-    links from non-moderators, and the bot posts the enrolment links.
-    The bot only joins your chat while a contest is open for
+    links from non-moderators. The bot only joins your chat during
     registrations, and leaves afterwards.
-
-!!! tip "On the viewer side"
-    Viewers install nothing beyond RetroBat + APIExpose: the enrolment link
-    leads to a confirmation page, then to the game client in their browser.
-    If "Local APIExpose" shows red, they must launch RetroBat with the
-    APIExpose plugin and start the game.
