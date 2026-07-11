@@ -97,6 +97,12 @@ Dans **Mode → Event → Live Contest**, avec un jeu sélectionné dans RetroBa
    classement est figé, l'export **CSV** disponible, et **↻ Relancer**
    recrée immédiatement un contest identique.
 
+!!! tip "Recommandé : passez le bot modérateur"
+    Tapez une fois `/mod RetroCreatorBot` dans votre chat : beaucoup de
+    chaînes bloquent les liens des non-modérateurs, or le bot poste
+    justement les liens d'inscription. Le bot ne rejoint votre chat que
+    pendant les inscriptions d'un contest, et le quitte ensuite.
+
 !!! tip "Côté viewer"
     Le viewer n'installe rien de plus que RetroBat + APIExpose : le lien
     d'inscription mène à une page de confirmation, puis au client de jeu

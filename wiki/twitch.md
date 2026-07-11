@@ -89,6 +89,12 @@ In **Mode → Event → Live Contest**, with a game selected in RetroBat:
    frozen, the **CSV** export becomes available, and **↻ Run again**
    instantly recreates an identical contest.
 
+!!! tip "Recommended: make the bot a moderator"
+    Type `/mod RetroCreatorBot` once in your chat: many channels block
+    links from non-moderators, and the bot posts the enrolment links.
+    The bot only joins your chat while a contest is open for
+    registrations, and leaves afterwards.
+
 !!! tip "On the viewer side"
     Viewers install nothing beyond RetroBat + APIExpose: the enrolment link
     leads to a confirmation page, then to the game client in their browser.
