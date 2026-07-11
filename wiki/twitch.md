@@ -80,7 +80,8 @@ In **Mode → Event → Live Contest**, with a game selected in RetroBat:
    check the signals flow. When you open for real, their test scores are
    wiped — but they stay enrolled.
 4. **▶ Open registrations**: every viewer typing the !command gets a personal
-   link (shown on the card, paste it in chat). They log in with Twitch,
+   link — posted automatically in chat by the **NelfeTech bot** when it is
+   active, and shown on the card (copy button) otherwise. They log in with Twitch,
    confirm, and open their **game client** — a simple web page that reads
    their game through their local APIExpose and pushes progress every
    3 seconds.

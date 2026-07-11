@@ -87,7 +87,9 @@ Dans **Mode → Event → Live Contest**, avec un jeu sélectionné dans RetroBa
    jouent pour vérifier que les signaux remontent. À l'ouverture réelle,
    leurs scores de test sont effacés — mais ils restent inscrits.
 4. **▶ Ouvrir les inscriptions** : chaque viewer qui tape la !commande reçoit
-   un lien personnel (affiché dans la carte, à coller dans le chat). Il se
+   un lien personnel — posté automatiquement dans le chat par le **bot
+   NelfeTech** quand il est actif, et affiché dans la carte (bouton copier)
+   sinon. Il se
    connecte avec Twitch, confirme, et ouvre son **client de jeu** — une
    simple page web qui lit sa partie via son APIExpose local et envoie sa
    progression toutes les 3 secondes.
