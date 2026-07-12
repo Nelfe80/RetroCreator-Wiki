@@ -16,6 +16,12 @@ stream. Voici le chemin complet, de zéro à l'overlay en direct.
     Cliquez **Essayer le mode démo** sous le bouton Connecter : une session de
     jeu simulée traverse tout le pipeline pour explorer chaque vue.
 
+??? note "Sous le capot — ce que fait vraiment Connecter"
+    Retro Creator dialogue avec le service local APIExpose (`127.0.0.1:12345`)
+    livré avec RetroBat : jeu en cours et visuels, plus les événements de gameplay
+    en direct du jeu lancé. Rien ne quitte votre machine à ce stade — la connexion
+    est locale, en lecture seule, et se rétablit seule si vous relancez RetroBat.
+
 L'interface s'organise autour du menu **Mode** :
 
 | Mode | À quoi il sert |

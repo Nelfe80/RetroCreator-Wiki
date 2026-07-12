@@ -16,6 +16,12 @@ zero to a live overlay.
     Click **Try demo mode** under the Connect button: a simulated game session
     runs through the whole pipeline so you can explore every view.
 
+??? note "Under the hood — what Connect actually does"
+    Retro Creator talks to the local APIExpose service (`127.0.0.1:12345`) shipped
+    with RetroBat: current game and artwork, plus the live gameplay events of the
+    running game. Nothing leaves your machine at this stage — the connection is
+    local, read-only, and reconnects by itself if you restart RetroBat.
+
 The interface is organised around the **Mode** menu:
 
 | Mode | What it is for |
