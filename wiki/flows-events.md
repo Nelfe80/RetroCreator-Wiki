@@ -40,6 +40,13 @@ The 20 catalogue widgets (Widgets tab) each ship a **ready-made flow**: the
 
 ![Event dashboard](assets/event.png)
 
+**＋ New event** opens the picker — three event types:
+
+- 🏆 **Live Contest** — your viewers play at home, live standings
+  (see [Twitch integration](twitch.md));
+- 🤖 **Automated game** — a Flows scenario living during your run;
+- 🎟️ **Quick contest** — a one-off chat draw, no scenario needed.
+
 **Automated games** — pick one of your flows:
 
 - **▶ Activate / ⏸ Deactivate** it (a disabled flow does nothing);

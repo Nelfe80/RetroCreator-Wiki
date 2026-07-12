@@ -43,6 +43,13 @@ toujours.
 
 ![Tableau de bord Event](assets/event.png)
 
+**＋ Nouvel événement** ouvre le sélecteur — trois types d'événements :
+
+- 🏆 **Live Contest** — vos viewers jouent chez eux, classement en direct
+  (voir [Intégration Twitch](twitch.md)) ;
+- 🤖 **Jeu automatisé** — un scénario Flows qui vit pendant votre partie ;
+- 🎟️ **Concours express** — un tirage ponctuel dans le chat, sans scénario.
+
 **Jeux automatisés** — choisissez un de vos flows :
 
 - **▶ Activer / ⏸ Désactiver** (un flow désactivé ne fait rien) ;
