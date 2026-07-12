@@ -23,7 +23,13 @@ Create, rename or delete documents from the header buttons or the native
 Grouped by usage, every entry is a **preset** — it lands pre-configured:
 
 - **Media** — marquee, boxart, logo (wheel), fanart, cartridge, title shot,
-  video, **system logo**, **system fanart**, free image.
+  video, **system logo**, **system marquee**, **system DMD**, **system
+  fanart**, free image.
+
+    !!! example "A \"Now Playing\" corner in four clicks"
+        Drop a **Logo (wheel)**, a **Year**, a **Rating ★** and a **Composed
+        text** (`Released in {game.year} by {game.publisher}`) — every element
+        updates by itself when you browse to another game.
 - **Game data** — title, system name/code, year, genre, developer, publisher,
   rating ★, description, manufacturer, system year, composed text
   (`Released in {game.year} by {game.publisher}`), free text.

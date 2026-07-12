@@ -24,7 +24,13 @@ flows.
 Groupée par usage, chaque entrée est un **preset** — elle arrive pré-réglée :
 
 - **Média** — marquee, boxart, logo (wheel), fanart, cartouche, capture
-  titre, vidéo, **logo système**, **fanart système**, image libre.
+  titre, vidéo, **logo système**, **marquee système**, **DMD système**,
+  **fanart système**, image libre.
+
+    !!! example "Un coin \"Now Playing\" en quatre clics"
+        Posez un **Logo (wheel)**, une **Année**, une **Note ★** et un **Texte
+        composé** (`Sorti en {game.year} par {game.publisher}`) — chaque élément
+        se met à jour tout seul quand vous naviguez vers un autre jeu.
 - **Données du jeu** — titre, nom/code du système, année, genre, développeur,
   éditeur, note ★, description, constructeur, année du système, texte composé
   (`Sorti en {game.year} par {game.publisher}`), texte libre.
