@@ -60,6 +60,15 @@ at home** (RetroBat + APIExpose) and their real game data streams back live —
 first to 10 rings, best score, time attack… Everything is orchestrated
 automatically: game launch, simultaneous start, scores, results.
 
+![From the controller to the live leaderboard](assets/flow-contest.svg)
+
+??? note "Under the hood — how objectives stay fair"
+    A contest objective is bound to a real gameplay signal of the selected game
+    (the same normalized events that power your overlays). When the contest is
+    created, the game's exact event definition fingerprint travels with it, so every
+    participant is measured on the same signals, on the same game version — and the
+    signal picker only offers moments that can actually fire.
+
 ### One-time setup: the streamer token
 
 1. **File → Settings → NelfeTech** → *Get my token (Twitch login)*: log in

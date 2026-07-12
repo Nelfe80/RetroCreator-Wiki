@@ -66,6 +66,16 @@ en direct — premier à 10 anneaux, meilleur score, contre-la-montre…
 Tout est orchestré automatiquement : lancement du jeu, départ simultané,
 scores, résultats.
 
+![De la manette au classement en direct](assets/flow-contest.svg)
+
+??? note "Sous le capot — des objectifs équitables"
+    Un objectif de contest est lié à un vrai signal de gameplay du jeu sélectionné
+    (les mêmes événements normalisés qui pilotent vos overlays). À la création du
+    contest, l'empreinte exacte de la définition d'événements du jeu voyage avec
+    lui : tous les participants sont mesurés sur les mêmes signaux, sur la même
+    version du jeu — et le sélecteur ne propose que des moments qui peuvent
+    réellement se déclencher.
+
 ### Une fois pour toutes : le jeton streamer
 
 1. **Fichier → Paramètres → NelfeTech** → *Obtenir mon jeton (connexion
