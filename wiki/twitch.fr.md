@@ -85,7 +85,11 @@ scores, résultats.
 
 ### Créer et lancer un contest
 
-Dans **Mode → Event → Live Contest**, avec un jeu sélectionné dans RetroBat :
+Dans **Mode → Event**, cliquez **＋ Nouvel événement** et choisissez le type —
+🏆 **Live Contest** (vos viewers jouent chez eux), 🤖 **Jeu automatisé** (un
+scénario Flows qui vit pendant votre partie) ou 🎟️ **Concours express** (un
+tirage ponctuel dans le chat). Choisissez **Live Contest**, avec un jeu
+sélectionné dans RetroBat :
 
 1. **Titre**, **!commande**, **Mode** (course, meilleur score,
    contre-la-montre, survie), **Signal du jeu** — lu directement dans le
@@ -109,6 +113,9 @@ Dans **Mode → Event → Live Contest**, avec un jeu sélectionné dans RetroBa
 2. Dès que sa partie commence, elle est **mise en pause** — il est *prêt*.
    Votre tableau de bord affiche **« prêts : x / y »** en direct, et signale
    ceux qui coincent (*⚠ jeu introuvable*, *⚠ doit appuyer sur START*…).
+
+    ![Le parcours de chaque joueur](assets/contest-phases.svg)
+
 3. **🏁 Départ** : décompte **5-4-3-2-1 en grand dans le jeu**, puis GO —
    toutes les pauses sautent **à la même milliseconde**.
 4. En course, le premier arrivé à la cible voit son jeu se mettre en pause :

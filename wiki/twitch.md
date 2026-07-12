@@ -78,7 +78,10 @@ automatically: game launch, simultaneous start, scores, results.
 
 ### Create and run a contest
 
-In **Mode → Event → Live Contest**, with a game selected in RetroBat:
+In **Mode → Event**, click **＋ New event** and pick the event type —
+🏆 **Live Contest** (viewers play at home), 🤖 **Automated game** (a Flows
+scenario living during your run) or 🎟️ **Quick contest** (a one-off chat
+draw). Choose **Live Contest**, with a game selected in RetroBat:
 
 1. **Title**, **!command**, **Mode** (race, best score, time attack,
    survival), **Game signal** — read straight from the current game's .MEM
@@ -102,6 +105,8 @@ In **Mode → Event → Live Contest**, with a game selected in RetroBat:
 2. As soon as their run begins it is **paused** — they are *ready*. Your
    dashboard shows **"ready: x / y"** live and flags whoever is stuck
    (*⚠ game not found*, *⚠ must press START*…).
+
+    ![Every player's journey](assets/contest-phases.svg)
 3. **🏁 Start**: a big in-game **5-4-3-2-1 countdown**, then GO — every
    pause lifts **at the same millisecond**.
 4. In race mode, the first player to reach the target sees their game pause:
