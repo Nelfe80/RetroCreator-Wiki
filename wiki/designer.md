@@ -29,6 +29,14 @@ Grouped by usage, every entry is a **preset** — it lands pre-configured:
   (`Released in {game.year} by {game.publisher}`), free text.
 - **Variables** — score, timer, lives, coins/rings counter, last Twitch
   viewer, progress bar.
+
+    ??? note "Under the hood — where live variables come from"
+        Score and timer widgets are fed by APIExpose's live aggregators
+        (`/ws/score`, `/ws/timer`): raw game values are decoded (including BCD
+        scores and composed minute+second timers) and normalized before they
+        reach your overlay, so the number you display is the number the game
+        actually shows. Lives and collectibles come from the same per-game
+        event definitions that power the Flows.
 - **Popups** — the achievement popup, plus your own popups.
 - **Shapes** — rectangle (with fill), input viewer.
 

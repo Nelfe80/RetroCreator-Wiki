@@ -30,6 +30,15 @@ Groupée par usage, chaque entrée est un **preset** — elle arrive pré-régl�
   (`Sorti en {game.year} par {game.publisher}`), texte libre.
 - **Variables** — score, timer, vies, compteur pièces/anneaux, dernier viewer
   Twitch, barre de progression.
+
+    ??? note "Sous le capot — d'où viennent les variables live"
+        Les widgets score et timer sont alimentés par les agrégateurs live
+        d'APIExpose (`/ws/score`, `/ws/timer`) : les valeurs brutes du jeu sont
+        décodées (y compris les scores BCD et les timers composés
+        minutes+secondes) et normalisées avant d'atteindre votre overlay — le
+        nombre affiché est celui que le jeu affiche vraiment. Vies et
+        collectibles viennent des mêmes définitions d'événements par jeu qui
+        alimentent les Flows.
 - **Popups** — la popup de succès, plus vos propres popups.
 - **Formes** — rectangle (avec fond), input viewer.
 
