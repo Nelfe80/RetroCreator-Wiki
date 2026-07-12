@@ -2,12 +2,20 @@
 
 **Studio d'overlays live pour le streaming retro-gaming — piloté par les vraies données de jeu.**
 
-Retro Creator transforme ce qui se passe réellement dans vos jeux retro — jeu en cours,
-score live, timers, vies, RetroAchievements, inputs — en overlays de stream soignés et
-en automatisations live, sans écrire une ligne de code.
+Un boss vaincu, des anneaux perdus, un record battu — Retro Creator transforme ce
+qui se passe réellement dans vos jeux retro en overlays de stream soignés, en
+éclairages de pièce et en automatisations live, sans écrire une ligne de code.
 
-Il s'appuie sur [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
-et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert.
+![Le jeu pilote votre stream](assets/flow-game-to-stream.svg)
+
+??? note "Sous le capot"
+    Retro Creator s'appuie sur [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
+    et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert. APIExpose
+    observe la mémoire vive du jeu en cours via un wrapper d'émulateur signé et
+    normalise chaque moment de gameplay dans un vocabulaire d'événements stable
+    (actions et familles comme `scoring.points` ou `flow.lifecycle`). Plus de
+    14 000 jeux sur 57 systèmes sont livrés pré-cartographiés, et chaque définition
+    d'événement peut être inspectée — ou étendue — en texte clair.
 
 ![Vue Live](assets/pulse.png)
 
@@ -36,8 +44,8 @@ et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert.
 
 ## Statut
 
-Retro Creator est **en développement actif** — pas encore publié. Ce site héberge la
-documentation officielle et le [suivi des issues](support.md).
+Retro Creator est **en accès anticipé** — la documentation s'enrichit à chaque
+build. Ce site héberge la documentation officielle et le [suivi des issues](support.md).
 
 !!! tip "Restez informé"
     Suivez le [dépôt GitHub](https://github.com/Nelfe80/RetroCreator-Wiki) pour être
