@@ -6,7 +6,7 @@ Beat a boss, lose your rings, break a record — Retro Creator turns what actual
 happens in your retro games into polished stream overlays, room lighting and live
 automations, without writing a single line of code.
 
-![The game drives your stream](assets/flow-game-to-stream.svg)
+![The game drives your stream](assets/flow-game-to-stream.en.svg)
 
 ??? note "Under the hood"
     Retro Creator is built on top of [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
