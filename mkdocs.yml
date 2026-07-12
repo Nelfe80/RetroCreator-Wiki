@@ -68,5 +68,6 @@ nav:
   - Designer: designer.md
   - Flows & Event: flows-events.md
   - Twitch: twitch.md
+  - Connect your tools: connectors.md
   - Progress: progress.md
   - Support & issues: support.md
