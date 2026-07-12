@@ -60,7 +60,7 @@ at home** (RetroBat + APIExpose) and their real game data streams back live —
 first to 10 rings, best score, time attack… Everything is orchestrated
 automatically: game launch, simultaneous start, scores, results.
 
-![From the controller to the live leaderboard](assets/flow-contest.en.svg)
+![From the controller to the live leaderboard](assets/flow-contest.svg)
 
 ??? note "Under the hood — how objectives stay fair"
     A contest objective is bound to a real gameplay signal of the selected game
