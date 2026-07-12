@@ -4,6 +4,18 @@ Retro Creator runs next to [RetroBat](https://www.retrobat.org/) and turns real
 gameplay data into stream overlays and automations. Here is the full path from
 zero to a live overlay.
 
+## 0. Install
+
+1. [Download the latest release](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest) (`RetroCreator-x.y.z.7z`).
+2. Extract the archive into your **`RetroBat\plugins\`** folder — you end up
+   with `RetroBat\plugins\RetroCreator\RetroCreator.exe`.
+3. Launch `RetroCreator.exe`.
+
+!!! info "Windows SmartScreen"
+    The executable is signed `CN=nelfeTech` (self-signed). On first launch
+    Windows may show a SmartScreen warning: click **More info → Run anyway**.
+    You can verify the download with the SHA-256 published on the release page.
+
 ## 1. Launch and connect
 
 1. Start **RetroBat** (EmulationStation), with the APIExpose plugin enabled.
