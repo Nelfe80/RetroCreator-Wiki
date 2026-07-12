@@ -17,6 +17,15 @@ Un flow est un ensemble de règles lisibles :
 - **Quand** — n'importe quel événement du catalogue : événements de jeu (vie
   perdue, game over, anneaux/pièces, record, niveau…), messages et !commandes
   du chat Twitch, compteurs, état de l'API.
+
+    ??? note "Sous le capot — d'où viennent les événements de jeu"
+        Les événements de jeu sont de vrais signaux de gameplay normalisés, publiés
+        par APIExpose sur `/ws/ingame`. Chacun porte une **action** (`LOSE_LIFE`,
+        `BOSS_DEFEATED`, `COIN_GAIN`…), une **famille** (`resources.lives`,
+        `combat.enemies`, `scoring.collectibles`…) et, quand le jeu les fournit, une
+        **couleur** et un index **joueur**. Les sélecteurs ne proposent que les
+        moments qui existent vraiment dans le jeu en cours — les définitions
+        dormantes sont filtrées, donc ce que vous choisissez se déclenchera.
 - **Si** — une condition fermée sur un champ du payload ou un compteur. Les
   valeurs peuvent être **numériques** (`au moins 100`) ou **textuelles**
   (`commande = ring`).

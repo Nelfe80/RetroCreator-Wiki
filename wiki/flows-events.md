@@ -17,6 +17,15 @@ A flow is a set of readable rules:
 - **When** — any event from the catalogue: game events (life lost, game over,
   rings/coins, high score, level…), Twitch chat messages and !commands,
   counters, API state.
+
+    ??? note "Under the hood — where game events come from"
+        Game events are real, normalized gameplay signals published by APIExpose on
+        `/ws/ingame`. Each one carries an **action** (`LOSE_LIFE`, `BOSS_DEFEATED`,
+        `COIN_GAIN`…), a **family** (`resources.lives`, `combat.enemies`,
+        `scoring.collectibles`…) and, when the game provides them, a **color** and a
+        **player** index. The selectors only offer moments that actually exist in the
+        game you are running — dormant definitions are filtered out, so what you pick
+        is guaranteed to fire.
 - **If** — a closed condition on a payload field or a counter. Values can be
   **numbers** (`at least 100`) or **text** (`command equals ring`).
 - **Then** — actions: show a popup (simple, or one of *your* designed popups),
