@@ -20,8 +20,8 @@ stream. Voici le chemin complet, de zéro à l'overlay en direct.
 ## 1. Lancer et connecter
 
 1. Démarrez **RetroBat** (EmulationStation), avec le plugin APIExpose actif.
-2. Lancez **Retro Creator**. L'application s'ouvre sur la vue **Live** avec un
-   seul bouton : **Connecter**.
+2. Lancez **Retro Creator**. L'application s'ouvre sur la vue **Listener** avec
+   un seul bouton : **Connecter**.
 3. Cliquez **Connecter** — l'état en bas de fenêtre passe au vert
    (`Connecté`). Dès lors, chaque jeu parcouru ou lancé alimente l'application.
 
@@ -39,11 +39,15 @@ L'interface s'organise autour du menu **Mode** :
 
 | Mode | À quoi il sert |
 |---|---|
-| **Live** | Le pouls de votre stream — chaque événement de jeu orbite autour du logo du jeu en cours. |
+| **Listener** | Le pouls de votre stream — chaque événement de jeu orbite autour du logo du jeu en cours, en direct. |
 | **Designer** | Composer vos vues d'overlay, popups et composants. |
-| **Flows** | Conditionner vos automatisations : *Quand… Si… Alors…* |
-| **Event** | Le tableau de bord : activer vos jeux, lancer des concours de chat. |
-| **Widgets** | Le catalogue de mécaniques de stream prêtes à l'emploi et de templates de vues. |
+| **Flows** | Conditionner vos automatisations : *Quand… Si… Alors…* — un déclencheur peut viser un moment précis (`Vie perdue`) ou toute une famille (`tout moment score/collectibles`). |
+| **Event** | Le tableau de bord : activer vos jeux automatisés, lancer des concours de chat et des Live Contests. |
+| **Widgets** | Le catalogue des 20 mécaniques de stream prêtes à l'emploi — avec badge de compatibilité par jeu et bouton 🧪 Tester qui rejoue le moment sans avoir à le jouer. |
+| **Templates** | Des vues d'événements prêtes à l'emploi : un clic crée la vue dans votre espace et l'ouvre dans le Designer. |
+
+Le menu **Versions** affiche votre édition de licence (Lite, Pro, Studio), et
+**Fichier → Paramètres** regroupe vos connexions (OBS, Twitch, NelfeTech…).
 
 Le bouton **Moniteur** de la barre d'état déplie un terminal avec le journal
 brut des événements (6 lignes) — pratique pour vérifier ce que les jeux

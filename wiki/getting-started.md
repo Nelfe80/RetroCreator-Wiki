@@ -19,7 +19,7 @@ zero to a live overlay.
 ## 1. Launch and connect
 
 1. Start **RetroBat** (EmulationStation), with the APIExpose plugin enabled.
-2. Launch **Retro Creator**. The app opens on the **Live** view with a single
+2. Launch **Retro Creator**. The app opens on the **Listener** view with a single
    button: **Connect**.
 3. Click **Connect** — the status bar at the bottom turns green
    (`Connected`). From now on every game you browse or play feeds the app.
@@ -38,11 +38,15 @@ The interface is organised around the **Mode** menu:
 
 | Mode | What it is for |
 |---|---|
-| **Live** | The pulse of your stream — every game event orbits the current game logo. |
+| **Listener** | The pulse of your stream — every game event orbits the current game logo, live. |
 | **Designer** | Compose your overlay views, popups and components. |
-| **Flows** | Condition your automations: *When… If… Then…* |
-| **Event** | The dashboard: activate your games, run chat contests. |
-| **Widgets** | The catalogue of ready-made stream mechanics and view templates. |
+| **Flows** | Condition your automations: *When… If… Then…* — triggers can target one exact moment (`Life lost`) or a whole family (`any score/collectible moment`). |
+| **Event** | The dashboard: activate your automated games, run chat contests and Live Contests. |
+| **Widgets** | The catalogue of 20 ready-made stream mechanics — with a per-game compatibility badge and a 🧪 Test button that replays the moment without playing it. |
+| **Templates** | Ready-made event views: one click creates the view in your workspace and opens it in the Designer. |
+
+The **Editions** menu shows your license tier (Lite, Pro, Studio), and
+**File → Settings** holds your connections (OBS, Twitch, NelfeTech…).
 
 The **Monitor** button in the status bar opens a terminal with the raw event
 log (6 lines) — handy to check what the games actually emit.
