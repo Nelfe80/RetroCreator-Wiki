@@ -53,6 +53,26 @@ Use the dedicated **Discord** action with a channel webhook URL
 (channel settings → Integrations → Webhooks). Messages support the same
 placeholders.
 
+### Stream Deck
+Retro Creator exposes a simple local HTTP API — any Stream Deck HTTP plugin
+(e.g. **API Ninja** or a *System → Open* action for GET calls) can drive it:
+
+- **Show live status on a button** — poll `GET http://127.0.0.1:19780/api/status`.
+  It returns `{ "status", "game", "system", "edition" }`: perfect for a
+  "what's running" key.
+- **Fire a popup on stream** — `POST http://127.0.0.1:19780/api/actions/achievement-popup`
+  with body `{"title": "Hydrate!", "points": 0}`.
+- **Trigger any flow** — `POST http://127.0.0.1:19780/api/simulate` with body
+  `{"action": "COIN_GAIN", "value": 10}`. This injects a game event into the
+  pipeline, so **every flow rule reacts as if the game had sent it** — one
+  deck key can drive counters, scenes, webhooks and popups at once.
+
+### Touch Portal
+Same API, no plugin required: create a button, add the built-in
+**Send HTTP request** action (method POST, content type JSON) and paste one
+of the calls above. Poll `/api/status` to display the current game on your
+Touch Portal page.
+
 ## Ephemeral states ("For…")
 
 Popups, OBS scene switches and source visibility accept a **For** duration

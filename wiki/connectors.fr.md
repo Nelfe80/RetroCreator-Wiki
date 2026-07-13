@@ -56,6 +56,29 @@ Utilisez l'action dédiée **Discord** avec l'URL d'un webhook de salon
 (paramètres du salon → Intégrations → Webhooks). Les messages acceptent les
 mêmes placeholders.
 
+### Stream Deck
+Retro Creator expose une API HTTP locale toute simple — n'importe quel
+plugin HTTP de Stream Deck (ex. **API Ninja**) la pilote :
+
+- **Afficher le statut sur une touche** — interrogez
+  `GET http://127.0.0.1:19780/api/status`. Réponse :
+  `{ "status", "game", "system", "edition" }` — parfait pour une touche
+  « qu'est-ce qui tourne ».
+- **Déclencher une popup à l'antenne** —
+  `POST http://127.0.0.1:19780/api/actions/achievement-popup` avec le corps
+  `{"title": "Hydrate-toi !", "points": 0}`.
+- **Déclencher n'importe quel flow** —
+  `POST http://127.0.0.1:19780/api/simulate` avec le corps
+  `{"action": "COIN_GAIN", "value": 10}`. L'événement est injecté dans le
+  pipeline : **toutes vos règles réagissent comme si le jeu l'avait envoyé**
+  — une seule touche peut piloter compteurs, scènes, webhooks et popups.
+
+### Touch Portal
+Même API, sans plugin : créez un bouton, ajoutez l'action intégrée
+**Send HTTP request** (méthode POST, contenu JSON) et collez l'un des appels
+ci-dessus. Interrogez `/api/status` pour afficher le jeu en cours sur votre
+page Touch Portal.
+
 ## États éphémères (« Pendant… »)
 
 Les popups, bascules de scène OBS et visibilités de source acceptent une

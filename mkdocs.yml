@@ -50,6 +50,7 @@ plugins:
             Home: Accueil
             Getting started: Bien démarrer
             Designer: Designer
+            Themes: Thèmes
             Flows & Event: Flows & Event
             Twitch: Twitch
             Progress: Avancement
@@ -66,6 +67,7 @@ nav:
   - Home: index.md
   - Getting started: getting-started.md
   - Designer: designer.md
+  - Themes: themes.md
   - Flows & Event: flows-events.md
   - Twitch: twitch.md
   - Connect your tools: connectors.md
