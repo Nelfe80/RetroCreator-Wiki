@@ -6,13 +6,12 @@ stream. Voici le chemin complet, de zéro à l'overlay en direct.
 
 ## 0. Installer
 
-1. [Téléchargez la dernière version](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest) (`RetroCreator-x.y.z.7z`).
-2. Extrayez l'archive dans votre dossier **`RetroBat\plugins\`** — vous obtenez
-   `RetroBat\plugins\RetroCreator\RetroCreator.exe`.
-3. Lancez `RetroCreator.exe`.
+1. [Téléchargez et lancez **`RetroCreator-Setup.exe`**](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest/download/RetroCreator-Setup.exe) :
+   il installe Retro Creator dans **`RetroBat\plugins\RetroCreator\`** et peut le
+   lancer aussitôt.
 
 !!! info "Windows SmartScreen"
-    L'exécutable est signé `CN=nelfeTech` (auto-signé). Au premier lancement,
+    L'installateur est signé `CN=nelfeTech` (auto-signé). Au premier lancement,
     Windows peut afficher un avertissement SmartScreen : cliquez
     **Informations complémentaires → Exécuter quand même**. Vous pouvez vérifier
     le téléchargement avec le SHA-256 publié sur la page de release.

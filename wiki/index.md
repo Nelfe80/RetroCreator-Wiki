@@ -42,9 +42,9 @@ automations, without writing a single line of code.
 
 ## Status
 
-Retro Creator is **released** — [download the latest version](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest).
+Retro Creator is **released** — [download the latest installer](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest/download/RetroCreator-Setup.exe).
 This site hosts the official documentation and the [issue tracker](support.md).
 
 !!! tip "Get it now"
-    [Download Retro Creator](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest), drop it in `RetroBat\plugins\`, launch
-    `RetroCreator.exe` — your first live overlay is five minutes away.
+    [Download Retro Creator](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest/download/RetroCreator-Setup.exe) and run the installer —
+    your first live overlay is five minutes away.

@@ -44,9 +44,9 @@ qui se passe réellement dans vos jeux retro en overlays de stream soignés, en
 
 ## Statut
 
-Retro Creator est **disponible** — [téléchargez la dernière version](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest).
+Retro Creator est **disponible** — [téléchargez le dernier installateur](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest/download/RetroCreator-Setup.exe).
 Ce site héberge la documentation officielle et le [suivi des issues](support.md).
 
 !!! tip "Lancez-vous"
-    [Téléchargez Retro Creator](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest), déposez-le dans `RetroBat\plugins\`,
-    lancez `RetroCreator.exe` — votre premier overlay live est à cinq minutes.
+    [Téléchargez Retro Creator](https://github.com/Nelfe80/RetroCreator-Wiki/releases/latest/download/RetroCreator-Setup.exe) et lancez
+    l'installateur — votre premier overlay live est à cinq minutes.
