@@ -9,8 +9,8 @@ qui se passe réellement dans vos jeux retro en overlays de stream soignés, en
 ![Le jeu pilote votre stream](assets/flow-game-to-stream.svg)
 
 ??? note "Sous le capot"
-    Retro Creator s'appuie sur [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
-    et son [SDK Data/Event](https://github.com/Nelfe80/APIExpose-SDK) ouvert. APIExpose
+    Retro Creator s'appuie sur [RetroBat APIExpose](https://nelfe80.github.io/RetroBat-APIExpose/)
+    et son [SDK Data/Event](https://nelfe80.github.io/APIExpose-SDK/fr/) ouvert. APIExpose
     observe la mémoire vive du jeu en cours via un wrapper d'émulateur signé et
     normalise chaque moment de gameplay dans un vocabulaire d'événements stable
     (actions et familles comme `scoring.points` ou `flow.lifecycle`). Plus de

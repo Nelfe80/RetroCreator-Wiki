@@ -9,8 +9,8 @@ automations, without writing a single line of code.
 ![The game drives your stream](assets/flow-game-to-stream.svg)
 
 ??? note "Under the hood"
-    Retro Creator is built on top of [RetroBat APIExpose](https://github.com/Nelfe80/RetroBat-APIExpose)
-    and its open [Data/Event SDK](https://github.com/Nelfe80/APIExpose-SDK). APIExpose
+    Retro Creator is built on top of [RetroBat APIExpose](https://nelfe80.github.io/RetroBat-APIExpose/en/)
+    and its open [Data/Event SDK](https://nelfe80.github.io/APIExpose-SDK/). APIExpose
     watches the live memory of the running game through a signed emulator wrapper and
     normalizes every gameplay moment into a stable event vocabulary (actions and
     families like `scoring.points` or `flow.lifecycle`). More than 14,000 games across
