@@ -8,7 +8,7 @@ edit_uri: ""
 
 theme:
   name: material
-  logo: assets/brand/retrocreator.svg
+  logo: assets/brand/retrocreator-white.svg
   favicon: assets/brand/favicon.svg
   language: en
   features:
