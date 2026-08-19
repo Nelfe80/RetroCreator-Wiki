@@ -1,0 +1,27 @@
+/* Couleurs de Retro Creator, reprises du kit de marque NELFE.
+
+   Material peint le bandeau avec la primaire : on y met la teinte profonde,
+   sinon le titre blanc n'y tiendrait pas. La teinte vive va sur les liens.
+
+   Le selecteur vise [data-md-color-primary] et non :root : le theme pose ses
+   variables sur cet attribut, et un :root perdrait le duel de specificite. A
+   specificite egale, c'est cette feuille qui gagne, chargee apres. */
+[data-md-color-primary] {
+  --md-primary-fg-color:        #8F3A06;
+  --md-primary-fg-color--light: #FF9E2C;
+  --md-primary-fg-color--dark:  #8F3A06;
+}
+
+[data-md-color-accent] {
+  --md-accent-fg-color: #FF9E2C;
+  --md-accent-fg-color--transparent: #FF9E2C1f;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #8F3A06;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #FFB44F;
+  --md-typeset-a-color: #FFB44F;
+}

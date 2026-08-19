@@ -6,6 +6,9 @@ repo_name: Nelfe80/RetroCreator-Wiki
 docs_dir: wiki
 edit_uri: ""
 
+extra_css:
+  - assets/brand.css
+
 theme:
   name: material
   logo: assets/brand/retrocreator-white.svg
