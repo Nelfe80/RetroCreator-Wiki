@@ -134,3 +134,42 @@ sélectionné dans RetroBat :
     Tapez une fois `/mod RetroCreatorBot` dans votre chat : beaucoup de
     chaînes bloquent les liens des non-modérateurs. Le bot ne rejoint votre
     chat que pendant les inscriptions, et le quitte ensuite.
+
+### Désormais certifié : des scores qui comptent partout
+
+Un Live Contest n'est plus seulement le classement de votre chaîne. Chaque partie
+jouée sur une **machine liée** produit maintenant un **score certifié** dans la
+chaîne Nelfe Play :
+
+- il compte sur le **classement mondial « stream »** (aux côtés des parties maison
+  et borne d'arcade) et sur la **carte Nelfe Play** du joueur, à son nom ;
+- l'objectif (course, meilleur score, contre-la-montre, survie) pilote *votre*
+  classement de contest ; le score certifié sous-jacent alimente les boards mondiaux.
+
+**Comment le score d'un viewer porte son nom** — sa machine (APIExpose) se lie
+**une seule fois** à un compte Nelfe Play. La page de participation affiche l'état :
+
+- ✅ *Scores enregistrés sur le compte Nelfe Play &lt;pseudo&gt;* — rien à faire,
+  c'est transparent ;
+- ⚠️ *Aucun compte Nelfe Play lié* — un bouton **🔗 Lier mon compte** : un clic, il
+  autorise sur nelfeplay.com, et il est **redirigé tout seul** en retour. Ensuite
+  c'est permanent et silencieux.
+
+Sans liaison, le contest fonctionne quand même (identité Twitch, votre classement)
+— le score reste simplement anonyme, hors des boards certifiés publics.
+
+### Liens à partager à vos viewers
+
+Donnez à votre communauté ces pages prêtes à l'emploi — toutes disponibles en
+**6 langues** (FR / EN / ES / JA / ZH / KO, un sélecteur de langue en haut de
+chaque page) :
+
+- **Guide d'installation viewer** (installeur APIExpose en un clic + un bouton
+  « tester mon installation » en direct) :
+  [`nelfetech.com/retrocreator/guide`](https://www.nelfetech.com/retrocreator/guide)
+- L'**installeur APIExpose direct** (celui vers lequel pointe le guide) :
+  [`APIExpose-Cabinet-Setup.exe`](https://github.com/Nelfe80/RetroBat-APIExpose/releases/latest/download/APIExpose-Cabinet-Setup.exe)
+
+Le jour du contest, les viewers n'ont qu'à taper votre **!commande** dans le chat :
+le bot leur envoie leur lien personnel, ils confirment avec Twitch, et leur jeu
+se lance tout seul.

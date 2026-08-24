@@ -125,3 +125,40 @@ draw). Choose **Live Contest**, with a game selected in RetroBat:
     Type `/mod RetroCreatorBot` once in your chat: many channels block
     links from non-moderators. The bot only joins your chat during
     registrations, and leaves afterwards.
+
+### Now certified: scores that count everywhere
+
+A Live Contest is no longer just your channel's leaderboard. Every run played on
+a **linked machine** now produces a **certified score** in the Nelfe Play chain:
+
+- it counts on the **worldwide "stream" leaderboard** (alongside home and arcade
+  plays) and on the player's **Nelfe Play card**, under their name;
+- the objective (race, best score, time attack, survival) drives *your* contest
+  ranking; the underlying certified score feeds the global boards.
+
+**How a viewer's score gets their name on it** — their machine (APIExpose) links
+**once** to a Nelfe Play account. The participation page shows the state:
+
+- ✅ *Scores saved to the Nelfe Play account &lt;pseudo&gt;* — nothing to do, it is
+  transparent;
+- ⚠️ *No Nelfe Play account linked* — a **🔗 Link my account** button: one click,
+  they approve on nelfeplay.com, and they are redirected back automatically. From
+  then on it is permanent and silent.
+
+Without a link the contest still works (Twitch identity, your leaderboard) — the
+score just stays anonymous, off the public certified boards.
+
+### Links to share with your viewers
+
+Give your community these ready-made pages — all available in **6 languages**
+(FR / EN / ES / JA / ZH / KO, a language switch sits at the top of each page):
+
+- **Viewer setup guide** (RetroBat + APIExpose one-click installer + a live
+  "test my install" button):
+  [`nelfetech.com/retrocreator/guide`](https://www.nelfetech.com/retrocreator/guide)
+- The **direct APIExpose installer** (what the guide points to):
+  [`APIExpose-Cabinet-Setup.exe`](https://github.com/Nelfe80/RetroBat-APIExpose/releases/latest/download/APIExpose-Cabinet-Setup.exe)
+
+On contest day, viewers do nothing but type your **!command** in chat: the bot
+sends them their personal link, they confirm with Twitch, and their game
+launches by itself.
