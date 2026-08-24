@@ -1,8 +1,8 @@
 # Development progress
 
-Real screenshots from the current development build — updated as features land.
+Real screenshots from the current development build - updated as features land.
 
-## Flow Builder — no-code live scenarios
+## Flow Builder - no-code live scenarios
 
 Build interactive scenarios by connecting readable blocks: **When** a game event
 happens, **If** a condition is met, **Then** run actions (popups, counters,
@@ -15,19 +15,19 @@ your language.
 ## Live overlay
 
 The overlay is served locally as a transparent browser source and updates the
-instant the game does — here with a real score read from a running game.
+instant the game does - here with a real score read from a running game.
 
 
 ## Visual designer
 
-Compose your overlay with widgets, layers and properties — the preview is the
+Compose your overlay with widgets, layers and properties - the preview is the
 exact same renderer as the final browser source.
 
 ![Designer](assets/designer.png)
 
 ## Features by edition
 
-Every feature and connector is listed in the app, with its edition badge —
+Every feature and connector is listed in the app, with its edition badge -
 locked items simply unlock with your license.
 
 ![Plugins & features](assets/plugins.png)

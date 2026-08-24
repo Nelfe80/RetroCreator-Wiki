@@ -26,7 +26,7 @@ serveur, timeout 5 s. Le bouton **⚡ Tester** à côté de l'action envoie un
 ## Corps et en-têtes personnalisés
 
 Si votre outil attend **son** format, remplissez le champ « Corps
-personnalisé » — il remplace l'enveloppe standard et accepte les
+personnalisé » - il remplace l'enveloppe standard et accepte les
 placeholders : `{game}`, `{value}`, `{counter.nom}` et tout champ du
 payload. Ajoutez des en-têtes HTTP (une ligne `Nom: valeur` par en-tête)
 pour les outils à token.
@@ -40,7 +40,7 @@ pour les outils à token.
 
 ### Streamer.bot
 1. Activez son **HTTP Server** (Settings → Servers, port 7474 par défaut).
-2. Choisissez le preset **Streamer.bot** dans l'action de Flow — il
+2. Choisissez le preset **Streamer.bot** dans l'action de Flow - il
    pré-remplit `http://127.0.0.1:7474/DoAction` et le gabarit :
    `{"action": {"name": "MonAction"}, "args": {"game": "{game}"}}`.
 3. Remplacez `MonAction` par le nom de votre action Streamer.bot. De là,
@@ -48,7 +48,7 @@ pour les outils à token.
 
 ### n8n / Zapier / Make
 Créez un déclencheur **Webhook** dans votre scénario et collez son URL dans
-l'action de Flow. L'enveloppe standard arrive telle quelle — mappez les
+l'action de Flow. L'enveloppe standard arrive telle quelle - mappez les
 champs utiles.
 
 ### Discord
@@ -57,21 +57,21 @@ Utilisez l'action dédiée **Discord** avec l'URL d'un webhook de salon
 mêmes placeholders.
 
 ### Stream Deck
-Retro Creator expose une API HTTP locale toute simple — n'importe quel
+Retro Creator expose une API HTTP locale toute simple - n'importe quel
 plugin HTTP de Stream Deck (ex. **API Ninja**) la pilote :
 
-- **Afficher le statut sur une touche** — interrogez
+- **Afficher le statut sur une touche** - interrogez
   `GET http://127.0.0.1:19780/api/status`. Réponse :
-  `{ "status", "game", "system", "edition" }` — parfait pour une touche
+  `{ "status", "game", "system", "edition" }` - parfait pour une touche
   « qu'est-ce qui tourne ».
-- **Déclencher une popup à l'antenne** —
+- **Déclencher une popup à l'antenne** -
   `POST http://127.0.0.1:19780/api/actions/achievement-popup` avec le corps
   `{"title": "Hydrate-toi !", "points": 0}`.
-- **Déclencher n'importe quel flow** —
+- **Déclencher n'importe quel flow** -
   `POST http://127.0.0.1:19780/api/simulate` avec le corps
   `{"action": "COIN_GAIN", "value": 10}`. L'événement est injecté dans le
   pipeline : **toutes vos règles réagissent comme si le jeu l'avait envoyé**
-  — une seule touche peut piloter compteurs, scènes, webhooks et popups.
+  - une seule touche peut piloter compteurs, scènes, webhooks et popups.
 
 ### Touch Portal
 Même API, sans plugin : créez un bouton, ajoutez l'action intégrée

@@ -24,7 +24,7 @@ sample event instantly.
 
 ## Custom body & headers
 
-If your tool expects its own format, fill the **Custom body** field — it
+If your tool expects its own format, fill the **Custom body** field - it
 replaces the standard envelope and supports placeholders: `{game}`,
 `{value}`, `{counter.name}` and any payload field. Add HTTP headers
 (one `Name: value` per line) for tools that require a token.
@@ -38,7 +38,7 @@ replaces the standard envelope and supports placeholders: `{game}`,
 
 ### Streamer.bot
 1. Enable its **HTTP Server** (Settings → Servers, default port 7474).
-2. Pick the **Streamer.bot** preset in the Flow action — it pre-fills
+2. Pick the **Streamer.bot** preset in the Flow action - it pre-fills
    `http://127.0.0.1:7474/DoAction` and the body template:
    `{"action": {"name": "MyAction"}, "args": {"game": "{game}"}}`.
 3. Replace `MyAction` with your Streamer.bot action name. From there you can
@@ -46,7 +46,7 @@ replaces the standard envelope and supports placeholders: `{game}`,
 
 ### n8n / Zapier / Make
 Create a **Webhook trigger** in your scenario and paste its URL in the Flow
-action. The standard envelope arrives as-is — map the fields you need.
+action. The standard envelope arrives as-is - map the fields you need.
 
 ### Discord
 Use the dedicated **Discord** action with a channel webhook URL
@@ -54,17 +54,17 @@ Use the dedicated **Discord** action with a channel webhook URL
 placeholders.
 
 ### Stream Deck
-Retro Creator exposes a simple local HTTP API — any Stream Deck HTTP plugin
+Retro Creator exposes a simple local HTTP API - any Stream Deck HTTP plugin
 (e.g. **API Ninja** or a *System → Open* action for GET calls) can drive it:
 
-- **Show live status on a button** — poll `GET http://127.0.0.1:19780/api/status`.
+- **Show live status on a button** - poll `GET http://127.0.0.1:19780/api/status`.
   It returns `{ "status", "game", "system", "edition" }`: perfect for a
   "what's running" key.
-- **Fire a popup on stream** — `POST http://127.0.0.1:19780/api/actions/achievement-popup`
+- **Fire a popup on stream** - `POST http://127.0.0.1:19780/api/actions/achievement-popup`
   with body `{"title": "Hydrate!", "points": 0}`.
-- **Trigger any flow** — `POST http://127.0.0.1:19780/api/simulate` with body
+- **Trigger any flow** - `POST http://127.0.0.1:19780/api/simulate` with body
   `{"action": "COIN_GAIN", "value": 10}`. This injects a game event into the
-  pipeline, so **every flow rule reacts as if the game had sent it** — one
+  pipeline, so **every flow rule reacts as if the game had sent it** - one
   deck key can drive counters, scenes, webhooks and popups at once.
 
 ### Touch Portal

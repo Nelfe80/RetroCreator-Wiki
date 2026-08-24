@@ -28,7 +28,7 @@ Open **Mode → Event** → **Quick contest**:
 
 1. Choose the **!command** viewers must type (the *slug*, e.g. `!go`),
    the **duration**, and the winner message.
-2. Press **▶ Start participation** — the countdown runs, the participant list
+2. Press **▶ Start participation** - the countdown runs, the participant list
    grows in real time (one entry per viewer, even if they spam), with a live
    counter.
 3. At zero, a winner is drawn: big announcement on screen **and** a popup on
@@ -56,17 +56,17 @@ For recurring mechanics, condition everything in **Flows** and pilot it from
 ## 4. Live Contest: your viewers play at home
 
 The **Live Contest** goes beyond chat: your viewers launch the **same game
-at home** (RetroBat + APIExpose) and their real game data streams back live —
+at home** (RetroBat + APIExpose) and their real game data streams back live -
 first to 10 rings, best score, time attack… Everything is orchestrated
 automatically: game launch, simultaneous start, scores, results.
 
 ![From the controller to the live leaderboard](assets/flow-contest.svg)
 
-??? note "Under the hood — how objectives stay fair"
+??? note "Under the hood - how objectives stay fair"
     A contest objective is bound to a real gameplay signal of the selected game
     (the same normalized events that power your overlays). When the contest is
     created, the game's exact event definition fingerprint travels with it, so every
-    participant is measured on the same signals, on the same game version — and the
+    participant is measured on the same signals, on the same game version - and the
     signal picker only offers moments that can actually fire.
 
 ### One-time setup: the streamer token
@@ -78,14 +78,14 @@ automatically: game launch, simultaneous start, scores, results.
 
 ### Create and run a contest
 
-In **Mode → Event**, click **＋ New event** and pick the event type —
+In **Mode → Event**, click **＋ New event** and pick the event type -
 🏆 **Live Contest** (viewers play at home), 🤖 **Automated game** (a Flows
 scenario living during your run) or 🎟️ **Quick contest** (a one-off chat
 draw). Choose **Live Contest**, with a game selected in RetroBat:
 
 1. **Title**, **!command**, **Mode** (race, best score, time attack,
-   survival), **Game signal** — read straight from the current game's .MEM
-   file — and **Target**.
+   survival), **Game signal** - read straight from the current game's .MEM
+   file - and **Target**.
 2. **Who can join**: all viewers, **subscribers only**, or through a
    **channel-point reward**.
 3. **Bot message**: the text the bot posts in chat before the link
@@ -95,23 +95,22 @@ draw). Choose **Live Contest**, with a game selected in RetroBat:
 4. **🧪 Test round** (optional): trial scores are wiped when you open for
    real, participants stay enrolled.
 5. **▶ Open registrations**: every viewer typing the !command gets a
-   **short personal link** from the bot in chat. They confirm with Twitch —
+   **short personal link** from the bot in chat. They confirm with Twitch -
    and that's it: **their game launches at home automatically**.
 
 ### What the viewer experiences (all automatic)
 
 1. They confirm → their APIExpose takes over: the game launches, an on-top
    window says **"Press START!"**.
-2. As soon as their run begins it is **paused** — they are *ready*. Your
+2. As soon as their run begins it is **paused** - they are *ready*. Your
    dashboard shows **"ready: x / y"** live and flags whoever is stuck
    (*⚠ game not found*, *⚠ must press START*…).
 
     ![Every player's journey](assets/contest-phases.svg)
-3. **🏁 Start**: a big in-game **5-4-3-2-1 countdown**, then GO — every
+3. **🏁 Start**: a big in-game **5-4-3-2-1 countdown**, then GO - every
    pause lifts **at the same millisecond**.
 4. In race mode, the first player to reach the target sees their game pause:
-   their **time** is recorded, "🏁 Target reached!", and RetroArch closes by
-   itself — no need to wait for you to close the contest.
+   their **time** is recorded, "🏁 Target reached!", and RetroArch closes by itself.
 5. **⏹ Close**: standings frozen (race shows **times**), **CSV** export, a
    stable **JSON results feed** for your overlays, **↻ Run again**.
 
@@ -136,21 +135,20 @@ a **linked machine** now produces a **certified score** in the Nelfe Play chain:
 - the objective (race, best score, time attack, survival) drives *your* contest
   ranking; the underlying certified score feeds the global boards.
 
-**How a viewer's score gets their name on it** — their machine (APIExpose) links
+**How a viewer's score gets their name on it** - their machine (APIExpose) links
 **once** to a Nelfe Play account. The participation page shows the state:
 
-- ✅ *Scores saved to the Nelfe Play account &lt;pseudo&gt;* — nothing to do, it is
-  transparent;
-- ⚠️ *No Nelfe Play account linked* — a **🔗 Link my account** button: one click,
+- ✅ *Scores saved to the Nelfe Play account &lt;pseudo&gt;* : it is transparent;
+- ⚠️ *No Nelfe Play account linked* - a **🔗 Link my account** button: one click,
   they approve on nelfeplay.com, and they are redirected back automatically. From
   then on it is permanent and silent.
 
-Without a link the contest still works (Twitch identity, your leaderboard) — the
+Without a link the contest still works (Twitch identity, your leaderboard) - the
 score just stays anonymous, off the public certified boards.
 
 ### Links to share with your viewers
 
-Give your community these ready-made pages — all available in **6 languages**
+Give your community these ready-made pages - all available in **6 languages**
 (FR / EN / ES / JA / ZH / KO, a language switch sits at the top of each page):
 
 - **Viewer setup guide** (RetroBat + APIExpose one-click installer + a live

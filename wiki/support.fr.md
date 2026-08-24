@@ -17,7 +17,7 @@ en précisant :
 ## Demander une fonctionnalité
 
 Ouvrez une [demande de fonctionnalité](https://github.com/Nelfe80/RetroCreator-Wiki/issues/new?template=feature_request.yml)
-en décrivant le problème à résoudre — la situation de stream, pas seulement la
+en décrivant le problème à résoudre - la situation de stream, pas seulement la
 solution imaginée. Cela nous aide à l'évaluer face à la roadmap.
 
 ## Questions

@@ -9,11 +9,11 @@ centre, la palette d'éléments à gauche, calques et propriétés à droite.
 
 Chaque document a un **type**, choisi dans l'entête :
 
-- 🖼 **Vue (permanente)** — un overlay qui vit dans votre logiciel de stream.
+- 🖼 **Vue (permanente)** - un overlay qui vit dans votre logiciel de stream.
   Elle peut être *toujours visible*, ou seulement *dans le menu* / *en jeu*.
-- 💬 **Popup (temporaire)** — invisible par défaut ; un Flow l'affiche
+- 💬 **Popup (temporaire)** - invisible par défaut ; un Flow l'affiche
   quelques secondes (action *afficher une popup* → choisissez votre popup).
-- 🧩 **Composant** — une brique réutilisable.
+- 🧩 **Composant** - une brique réutilisable.
 
 Créez, renommez ou supprimez les documents depuis l'entête ou le menu natif
 **Designer**. La suppression vous avertit si le document est utilisé par vos
@@ -21,39 +21,39 @@ flows.
 
 ## La palette d'éléments
 
-Groupée par usage, chaque entrée est un **preset** — elle arrive pré-réglée :
+Groupée par usage, chaque entrée est un **preset** - elle arrive pré-réglée :
 
-- **Média** — marquee, boxart, logo (wheel), fanart, cartouche, capture
+- **Média** - marquee, boxart, logo (wheel), fanart, cartouche, capture
   titre, vidéo, **logo système**, **marquee système**, **DMD système**,
   **fanart système**, image libre.
 
     !!! example "Un coin \"Now Playing\" en quatre clics"
         Posez un **Logo (wheel)**, une **Année**, une **Note ★** et un **Texte
-        composé** (`Sorti en {game.year} par {game.publisher}`) — chaque élément
+        composé** (`Sorti en {game.year} par {game.publisher}`) - chaque élément
         se met à jour tout seul quand vous naviguez vers un autre jeu.
-- **Données du jeu** — titre, nom/code du système, année, genre, développeur,
+- **Données du jeu** - titre, nom/code du système, année, genre, développeur,
   éditeur, note ★, description, constructeur, année du système, texte composé
   (`Sorti en {game.year} par {game.publisher}`), texte libre.
-- **Variables** — score, timer, vies, compteur pièces/anneaux, dernier viewer
+- **Variables** - score, timer, vies, compteur pièces/anneaux, dernier viewer
   Twitch, barre de progression.
 
-    ??? note "Sous le capot — d'où viennent les variables live"
+    ??? note "Sous le capot - d'où viennent les variables live"
         Les widgets score et timer sont alimentés par les agrégateurs live
         d'APIExpose (`/ws/score`, `/ws/timer`) : les valeurs brutes du jeu sont
         décodées (y compris les scores BCD et les timers composés
-        minutes+secondes) et normalisées avant d'atteindre votre overlay — le
+        minutes+secondes) et normalisées avant d'atteindre votre overlay - le
         nombre affiché est celui que le jeu affiche vraiment. Vies et
         collectibles viennent des mêmes définitions d'événements par jeu qui
         alimentent les Flows.
-- **Popups** — la popup de succès, plus vos propres popups.
-- **Formes** — rectangle (avec fond), input viewer.
+- **Popups** - la popup de succès, plus vos propres popups.
+- **Formes** - rectangle (avec fond), input viewer.
 
 Vos propres fichiers (dossier configuré dans Paramètres → *Mes médias*)
 apparaissent dans le sélecteur de source Média en entrées `user:`.
 
 ## Les calques
 
-- **Glisser-déposer** pour réordonner — la profondeur est gérée
+- **Glisser-déposer** pour réordonner - la profondeur est gérée
   automatiquement, deux calques ne partagent jamais le même plan.
 - 👁 masque un calque, 🔒 le verrouille (sélectionnable, plus déplaçable).
   Les deux marchent aussi sur des **dossiers** entiers (📁+ pour en créer).
@@ -61,16 +61,16 @@ apparaissent dans le sélecteur de source Média en entrées `user:`.
 
 ## Les propriétés
 
-Trois groupes repliables — l'état ouvert/fermé est partagé entre calques :
+Trois groupes repliables - l'état ouvert/fermé est partagé entre calques :
 
-- **Calque** — position, taille, z, opacité, dossier, **fond** (couleur +
-  opacité en %, coins arrondis, padding — les nouveaux calques texte arrivent
+- **Calque** - position, taille, z, opacité, dossier, **fond** (couleur +
+  opacité en %, coins arrondis, padding - les nouveaux calques texte arrivent
   avec un discret fond noir 30 %), et la **transition de mise à jour**
   (aucune / fondu / glissement horizontal / vertical / pop) jouée à chaque
   changement de contenu.
-- **Contenu** — la donnée liée (avec suggestions), le texte composé, le format
+- **Contenu** - la donnée liée (avec suggestions), le texte composé, le format
   (`rating:stars` transforme 0.8 en ★★★★☆), le repli.
-- **Style** — police (polices système **ou vos fichiers** déposés dans le
+- **Style** - police (polices système **ou vos fichiers** déposés dans le
   dossier `fonts` à côté de l'application), taille, gras, couleur, alignement,
   **ombre portée** (opt-in ; soit l'*ombre globale* de la vue partagée par
   tous les calques, soit une ombre propre) et **contour** (extérieur /
@@ -78,7 +78,7 @@ Trois groupes repliables — l'état ouvert/fermé est partagé entre calques :
 
 ## Aperçu live & OBS
 
-L'**aperçu live** est actif par défaut — le canvas rend les vraies données et
+L'**aperçu live** est actif par défaut - le canvas rend les vraies données et
 les vrais visuels du jeu courant, et se rafraîchit quand vous changez de jeu
 dans le menu.
 

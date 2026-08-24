@@ -2,7 +2,7 @@
 
 Retro Creator lit votre chat Twitch **sans clé, sans token, sans mot de
 passe** : il rejoint votre chaîne anonymement, en lecture seule. Il ne peut
-rien écrire — zéro risque pour votre chaîne.
+rien écrire - zéro risque pour votre chaîne.
 
 ## 1. Brancher sa chaîne
 
@@ -31,7 +31,7 @@ Ouvrez **Mode → Event** → **Concours express** :
 
 1. Choisissez la **!commande** que les viewers doivent taper (le *slug*,
    ex. `!go`), la **durée**, et le message du gagnant.
-2. Appuyez sur **▶ Démarrer la participation** — le décompte tourne, la liste
+2. Appuyez sur **▶ Démarrer la participation** - le décompte tourne, la liste
    des participants grossit en direct (une entrée par viewer, même s'il
    spamme), avec un compteur.
 3. À zéro, un gagnant est tiré au sort : grande annonce à l'écran **et** popup
@@ -55,25 +55,25 @@ pilote depuis **Event** :
 !!! note "Et écrire dans le chat ?"
     Annoncer les gagnants *dans le chat* (et pas seulement sur l'overlay)
     demande une autorisation Twitch (OAuth). C'est sur la feuille de route ;
-    aujourd'hui toutes les annonces se font à l'écran — là où les viewers
+    aujourd'hui toutes les annonces se font à l'écran - là où les viewers
     regardent, de toute façon.
 
 ## 4. Live Contest : vos viewers jouent chez eux
 
 Le **Live Contest** va plus loin que le chat : vos viewers lancent le **même
 jeu chez eux** (RetroBat + APIExpose) et leurs vraies données de jeu remontent
-en direct — premier à 10 anneaux, meilleur score, contre-la-montre…
+en direct - premier à 10 anneaux, meilleur score, contre-la-montre…
 Tout est orchestré automatiquement : lancement du jeu, départ simultané,
 scores, résultats.
 
 ![De la manette au classement en direct](assets/flow-contest.svg)
 
-??? note "Sous le capot — des objectifs équitables"
+??? note "Sous le capot - des objectifs équitables"
     Un objectif de contest est lié à un vrai signal de gameplay du jeu sélectionné
     (les mêmes événements normalisés qui pilotent vos overlays). À la création du
     contest, l'empreinte exacte de la définition d'événements du jeu voyage avec
     lui : tous les participants sont mesurés sur les mêmes signaux, sur la même
-    version du jeu — et le sélecteur ne propose que des moments qui peuvent
+    version du jeu - et le sélecteur ne propose que des moments qui peuvent
     réellement se déclencher.
 
 ### Une fois pour toutes : le jeton streamer
@@ -85,15 +85,15 @@ scores, résultats.
 
 ### Créer et lancer un contest
 
-Dans **Mode → Event**, cliquez **＋ Nouvel événement** et choisissez le type —
+Dans **Mode → Event**, cliquez **＋ Nouvel événement** et choisissez le type -
 🏆 **Live Contest** (vos viewers jouent chez eux), 🤖 **Jeu automatisé** (un
 scénario Flows qui vit pendant votre partie) ou 🎟️ **Concours express** (un
 tirage ponctuel dans le chat). Choisissez **Live Contest**, avec un jeu
 sélectionné dans RetroBat :
 
 1. **Titre**, **!commande**, **Mode** (course, meilleur score,
-   contre-la-montre, survie), **Signal du jeu** — lu directement dans le
-   fichier .MEM du jeu courant — et **Cible**.
+   contre-la-montre, survie), **Signal du jeu** - lu directement dans le
+   fichier .MEM du jeu courant - et **Cible**.
 2. **Participation** : tous les viewers, **abonnés uniquement**, ou via une
    **récompense en points de chaîne**.
 3. **Message du bot** : le texte que le bot postera dans le chat avant le
@@ -104,23 +104,22 @@ sélectionné dans RetroBat :
    l'ouverture réelle, les inscrits restent.
 5. **▶ Ouvrir les inscriptions** : chaque viewer qui tape la !commande
    reçoit du bot un **lien court personnel** dans le chat. Il confirme avec
-   Twitch — et c'est tout : **son jeu se lance chez lui automatiquement**.
+   Twitch - et c'est tout : **son jeu se lance chez lui automatiquement**.
 
 ### Ce que vit le viewer (tout est automatique)
 
 1. Il confirme → son APIExpose prend le relais : le jeu se lance, une
    fenêtre en surimpression lui dit **« Appuie sur START ! »**.
-2. Dès que sa partie commence, elle est **mise en pause** — il est *prêt*.
+2. Dès que sa partie commence, elle est **mise en pause** - il est *prêt*.
    Votre tableau de bord affiche **« prêts : x / y »** en direct, et signale
    ceux qui coincent (*⚠ jeu introuvable*, *⚠ doit appuyer sur START*…).
 
     ![Le parcours de chaque joueur](assets/contest-phases.svg)
 
-3. **🏁 Départ** : décompte **5-4-3-2-1 en grand dans le jeu**, puis GO —
+3. **🏁 Départ** : décompte **5-4-3-2-1 en grand dans le jeu**, puis GO -
    toutes les pauses sautent **à la même milliseconde**.
 4. En course, le premier arrivé à la cible voit son jeu se mettre en pause :
-   son **temps** est enregistré, « 🏁 Objectif atteint ! », et RetroArch se
-   ferme tout seul — pas besoin d'attendre votre clôture.
+   son **temps** est enregistré, « 🏁 Objectif atteint ! », et RetroArch se ferme tout seul.
 5. **⏹ Clôturer** : classement figé (les **temps** en mode course), export
    **CSV**, **flux résultats JSON** stable pour vos overlays, **↻ Relancer**.
 
@@ -146,21 +145,20 @@ chaîne Nelfe Play :
 - l'objectif (course, meilleur score, contre-la-montre, survie) pilote *votre*
   classement de contest ; le score certifié sous-jacent alimente les boards mondiaux.
 
-**Comment le score d'un viewer porte son nom** — sa machine (APIExpose) se lie
+**Comment le score d'un viewer porte son nom** - sa machine (APIExpose) se lie
 **une seule fois** à un compte Nelfe Play. La page de participation affiche l'état :
 
-- ✅ *Scores enregistrés sur le compte Nelfe Play &lt;pseudo&gt;* — rien à faire,
-  c'est transparent ;
-- ⚠️ *Aucun compte Nelfe Play lié* — un bouton **🔗 Lier mon compte** : un clic, il
+- ✅ *Scores enregistrés sur le compte Nelfe Play &lt;pseudo&gt;* : c'est transparent ;
+- ⚠️ *Aucun compte Nelfe Play lié* - un bouton **🔗 Lier mon compte** : un clic, il
   autorise sur nelfeplay.com, et il est **redirigé tout seul** en retour. Ensuite
   c'est permanent et silencieux.
 
 Sans liaison, le contest fonctionne quand même (identité Twitch, votre classement)
-— le score reste simplement anonyme, hors des boards certifiés publics.
+- le score reste simplement anonyme, hors des boards certifiés publics.
 
 ### Liens à partager à vos viewers
 
-Donnez à votre communauté ces pages prêtes à l'emploi — toutes disponibles en
+Donnez à votre communauté ces pages prêtes à l'emploi - toutes disponibles en
 **6 langues** (FR / EN / ES / JA / ZH / KO, un sélecteur de langue en haut de
 chaque page) :
 

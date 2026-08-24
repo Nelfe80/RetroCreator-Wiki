@@ -17,7 +17,7 @@ and include:
 ## Requesting a feature
 
 Open a [feature request](https://github.com/Nelfe80/RetroCreator-Wiki/issues/new?template=feature_request.yml)
-describing the problem you want solved — the streaming situation, not only the
+describing the problem you want solved - the streaming situation, not only the
 solution you imagine. It helps us weigh it against the roadmap.
 
 ## Questions

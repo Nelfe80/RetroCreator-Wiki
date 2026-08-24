@@ -1,7 +1,7 @@
 # Thèmes
 
-Un thème change tout le look d'un overlay — police, couleurs, fond des
-panneaux, halo — **sans toucher à votre mise en page ni aux données**.
+Un thème change tout le look d'un overlay - police, couleurs, fond des
+panneaux, halo - **sans toucher à votre mise en page ni aux données**.
 Changez de thème quand vous voulez : vos widgets continuent de fonctionner
 exactement pareil.
 
@@ -15,7 +15,7 @@ Cinq thèmes sont livrés avec Retro Creator :
 
 | Thème | Ambiance |
 |---|---|
-| `arcade-neon` | défaut — panneaux sombres, accent doré, halo violet |
+| `arcade-neon` | défaut - panneaux sombres, accent doré, halo violet |
 | `crt-classic` | terminal au phosphore vert, monospace ère cathodique |
 | `neogeo-red` | borne d'arcade assumée, blanc chaud sur rouge profond |
 | `minimal-broadcast` | épuré, faible contraste, plateau esport |
@@ -26,8 +26,7 @@ Pro.
 
 ## Comment un thème est conçu
 
-Un thème, ce sont juste **cinq tokens de design** — aucune image, aucun
-téléchargement, rien à licencier. Les polices sont des polices système, les
+Un thème, ce sont juste **cinq tokens de design**. Les polices sont des polices système, les
 couleurs de simples valeurs CSS :
 
 | Token | Ce qu'il pilote | Exemple |
@@ -62,7 +61,7 @@ s'applique simplement.
 }
 ```
 
-4. Rechargez le Designer — **Sunset Drive** apparaît dans le sélecteur 🎨.
+4. Rechargez le Designer - **Sunset Drive** apparaît dans le sélecteur 🎨.
 
 Bonnes pratiques :
 
@@ -72,7 +71,7 @@ Bonnes pratiques :
   reste visible derrière l'overlay.
 - Testez sur un fond chargé : c'est le token `shadow` qui garde le texte
   lisible.
-- Un fichier invalide est ignoré en silence — impossible de casser vos
+- Un fichier invalide est ignoré en silence - impossible de casser vos
   overlays.
 
 Les thèmes sont aussi la première brique des **packs de contenu** : un pack

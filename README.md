@@ -1,4 +1,4 @@
-# Retro Creator — Documentation & Issues
+# Retro Creator - Documentation & Issues
 
 Official public home of **Retro Creator**, the live overlay studio for retro-gaming
 streams powered by real gameplay data (built on

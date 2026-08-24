@@ -1,7 +1,7 @@
 # Themes
 
-A theme changes the whole look of an overlay — font, colors, panel background,
-glow — **without touching your layout or data bindings**. Switch themes any
+A theme changes the whole look of an overlay - font, colors, panel background,
+glow - **without touching your layout or data bindings**. Switch themes any
 time; your widgets keep working exactly the same.
 
 ## Picking a theme
@@ -14,7 +14,7 @@ Five themes ship with Retro Creator:
 
 | Theme | Vibe |
 |---|---|
-| `arcade-neon` | default — dark panels, gold accent, violet glow |
+| `arcade-neon` | default - dark panels, gold accent, violet glow |
 | `crt-classic` | green phosphor terminal, scanline-era monospace |
 | `neogeo-red` | bold arcade cabinet, warm white on deep red |
 | `minimal-broadcast` | clean, low-contrast, esports desk |
@@ -24,8 +24,7 @@ The Lite edition uses the default theme; the selector unlocks with Pro.
 
 ## How a theme is built
 
-A theme is just **five design tokens** — no images, no downloads, nothing to
-license. Fonts are system fonts, colors are plain CSS values:
+A theme is just **five design tokens**. Fonts are system fonts, colors are plain CSS values:
 
 | Token | What it drives | Example |
 |---|---|---|
@@ -58,7 +57,7 @@ never break an overlay: if a theme is missing, the default simply applies.
 }
 ```
 
-4. Reload the Designer — **Sunset Drive** appears in the 🎨 selector.
+4. Reload the Designer - **Sunset Drive** appears in the 🎨 selector.
 
 Rules of thumb:
 
@@ -67,7 +66,7 @@ Rules of thumb:
 - Keep `panel` semi-transparent (`rgba(..., .7–.9)`) so gameplay stays visible
   behind the overlay.
 - Test on a busy background: the `shadow` token is what keeps text readable.
-- An invalid file is silently skipped — nothing can break your overlays.
+- An invalid file is silently skipped.
 
 Themes are also the first brick of **content packs**: a pack can ship several
 themes (plus views and widgets) that install into the same workspace folders.
