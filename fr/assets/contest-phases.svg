@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 190" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b7cf7"/>
+    </marker>
+  </defs>
+  <rect width="960" height="190" rx="14" fill="#12101c"/>
+  <text x="480" y="34" text-anchor="middle" fill="#c9c3e8" font-size="14" font-weight="600">LE PARCOURS DE CHAQUE JOUEUR, VU DE VOTRE TABLEAU DE BORD</text>
+
+  <rect x="26" y="58" width="150" height="58" rx="10" fill="#1d1930" stroke="#3a3357"/>
+  <text x="101" y="83" text-anchor="middle" fill="#fff" font-size="12.5">⏳ lancement…</text>
+  <text x="101" y="102" text-anchor="middle" fill="#8f88ad" font-size="10.5">le jeu démarre chez lui</text>
+
+  <line x1="184" y1="87" x2="212" y2="87" stroke="#8b7cf7" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="218" y="58" width="150" height="58" rx="10" fill="#1d1930" stroke="#3a3357"/>
+  <text x="293" y="83" text-anchor="middle" fill="#fff" font-size="12.5">✋ prêt</text>
+  <text x="293" y="102" text-anchor="middle" fill="#8f88ad" font-size="10.5">en pause sur la ligne</text>
+
+  <line x1="376" y1="87" x2="404" y2="87" stroke="#8b7cf7" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="410" y="58" width="150" height="58" rx="10" fill="#241d3f" stroke="#8b7cf7" stroke-width="1.5"/>
+  <text x="485" y="83" text-anchor="middle" fill="#fff" font-size="12.5">🚦 départ…</text>
+  <text x="485" y="102" text-anchor="middle" fill="#8f88ad" font-size="10.5">5-4-3-2-1 en jeu</text>
+
+  <line x1="568" y1="87" x2="596" y2="87" stroke="#8b7cf7" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="602" y="58" width="150" height="58" rx="10" fill="#1d1930" stroke="#3a3357"/>
+  <text x="677" y="83" text-anchor="middle" fill="#fff" font-size="12.5">🏃 en course</text>
+  <text x="677" y="102" text-anchor="middle" fill="#8f88ad" font-size="10.5">signaux en direct</text>
+
+  <line x1="760" y1="87" x2="788" y2="87" stroke="#8b7cf7" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="794" y="58" width="142" height="58" rx="10" fill="#1d1930" stroke="#35d073"/>
+  <text x="865" y="83" text-anchor="middle" fill="#fff" font-size="12.5">🏁 arrivé</text>
+  <text x="865" y="102" text-anchor="middle" fill="#8f88ad" font-size="10.5">temps enregistré</text>
+
+  <text x="480" y="152" text-anchor="middle" fill="#ffb02e" font-size="11.5">⚠ Et si quelqu'un bloque, vous le voyez : jeu introuvable · jeu non lancé · doit appuyer sur START · contest incomplet</text>
+  <text x="480" y="174" text-anchor="middle" fill="#6f6890" font-size="10.5">Personne ne reste au bord de la route sans que vous le sachiez.</text>
+</svg>
